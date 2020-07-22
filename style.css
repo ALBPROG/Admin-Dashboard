@@ -1,0 +1,291 @@
+body {
+    font-family: 'Montserrat'sans-serif;
+    background-color: #eee;
+    }
+
+    /* navbar */
+
+    .sidebar {
+        height: 100vh;
+        background: linear-gradient(rgba(77, 73, 73, 0.7), rgba(0, 0, 0, .9)), url(./image/img1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 5px 7px 25px #999;
+
+    }
+
+    
+    .bottom-border {
+        border-bottom: 1px groove #eee;
+    }
+
+    .sidebar-link {
+        transition: all .4s;
+    }
+
+    .sidebar-link:hover {
+        background-color: #444;
+        border-radius: 5px;
+    }
+
+    .current {
+        background-color: #f44333;
+        border-radius: 7px;
+        box-shadow: 2px 5px 10px #111;
+        transition: all .3s;
+    }
+
+    .current:hover {
+        background-color: #f66436;
+        border-radius: 7px;
+        box-shadow: 2px 5px 20px #111;
+        transform: translate(-2px)
+    }
+
+    .search-input {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid #999;
+        transition: all .4s;
+
+    }
+
+    .search-input:focus {
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 2px solid #dc3545;
+        color: azure;
+    }
+
+    .search-button {
+        border-radius: 50%;
+        padding: 5px 10px;
+        margin-left: 3px;
+        transition: all .4s;
+    }
+
+    .search-button:hover {
+        background-color: #eee;
+        transform: translate(-1px);
+
+    }
+
+
+
+
+    .sign-out {
+        transition: all .4s;
+    }
+
+    .sign-out:hover {
+        transform: translate(-6px);
+    }
+
+    .exSignOut {
+        margin-left: -15px;
+    }
+
+    .ex4 {
+
+        margin-left: -15px;
+
+    }
+
+    .ex4 .p1[data-count]:after {
+        position: absolute;
+        right: 30%;
+        top: 17%;
+        content: attr(data-count);
+        font-size: 40%;
+        padding: .2em;
+        border-radius: 50%;
+        line-height: 1em;
+        color: white;
+        background: rgba(255, 0, 0, .85);
+        text-align: center;
+        min-width: 1.3em;
+    }
+
+    .sidebar-sid {
+        transition: all .2s ease-in-out;
+    }
+
+    .sidebar-sid:hover {
+        background-color: #f66436;
+        border-radius: 7px;
+        box-shadow: 2px 5px 20px #111;
+        transform: translate(-2px);
+    }
+
+    .grow {
+        transition: all .4s;
+    }
+
+    .grow:hover {
+        transform: translate(-2px);
+    }
+
+    .icon-parent {
+        position: relative;
+
+    }
+
+    .icon-bullet:after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        height: 12px;
+        width: 12px;
+        background-color: #f44336;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .sidebar {
+            position: static;
+            height: auto;
+        }
+
+        .top-navbar {
+            position: static;
+        }
+    }
+
+    /* Logo */
+    .brightness {
+        filter: brightness(1);
+    }
+
+    .contrast {
+        filter: contrast(200%);
+    }
+
+    .saturate {
+        filter: saturate(4);
+    }
+
+    /* end logo */
+
+
+    /* Search Bar */
+    ::-webkit-input-placeholder {
+        color: #000;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :-moz-placeholder {
+        color: #000;
+        opacity: 0.5;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    ::-moz-placeholder {
+        color: #000;
+        opacity: 0.5;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :-ms-input-placeholder {
+        color: #000;
+        opacity: 0.5;
+        -ms-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    /* Place Holder CSS for Focus */
+    :hover::-webkit-input-placeholder {
+        opacity: 0.75;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :hover:-moz-placeholder {
+        opacity: 0.75;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :hover::-moz-placeholder {
+        opacity: 0.75;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :hover:-ms-input-placeholder {
+        opacity: 0.75;
+        -ms-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    /* Place Holder CSS for Focus */
+    :focus::-webkit-input-placeholder {
+        opacity: 0;
+        transform: translate(70%);
+        -webkit-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+
+    :focus:-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :focus::-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    :focus:-ms-input-placeholder {
+        opacity: 0;
+        -ms-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+
+    /* End Search Bar */
+
+    /* end navbar */
+
+
+    /* cards */
+    .card-common {
+        box-shadow: 1px 2px 5px #999;
+        transition: all .4s;
+    }
+
+    .card-common:hover {
+        box-shadow: 2px 3px 15px #999;
+        transform: translate(-1px);
+    }
+
+    /* end of cards */
+
+    /* Progress / Tasks */
+
+    .task-hover:hover {
+        background-color: whitesmoke;
+    }
+
+    .icons {
+        border: none;
+        color: black;
+        font-size: 14px;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .icons:hover {
+        opacity: 1;
+    }
+
+    /* end Progress / Task */
+
+
