@@ -1,6 +1,6 @@
 # Admin-Dashboard
 
- Admin Dashboard website template. I created this tempalte on May 2020.
+ Admin Dashboard website template. I created this template on May 2020.
  
  ## Purpose
  
